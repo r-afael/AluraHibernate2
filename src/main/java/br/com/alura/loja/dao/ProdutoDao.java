@@ -89,6 +89,7 @@ public class ProdutoDao {
 		return query.getResultList();
 	}
 
+	//Estudo sobre Criteria API
 	public List<Produto> buscarPorParametrosComCriteria(String nome,
 			BigDecimal preco, LocalDate dataCadastro) {
 		CriteriaBuilder builder = em.getCriteriaBuilder();
